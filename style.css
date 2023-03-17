@@ -1,0 +1,348 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    font-size: 1vw;
+}
+
+@font-face {
+    font-family:PlusJakartaSans;
+    src: url(assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family:PlusJakartaSansExtraBold;
+    src: url(assets/fonts/static/PlusJakartaSans-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family:PlusJakartaSansMedium;
+    src: url(assets/fonts/static/PlusJakartaSans-Medium.ttf);
+}
+
+#container
+{
+    padding: 1.5rem 0rem;
+}
+
+#top-navigation
+{
+    margin-top: 1.5rem;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+}
+
+#nav-notifications-counter
+{
+    margin-left: 2rem;
+    font-size: 4.5rem;
+    background-color: #072e7b;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+#nav-notification-text
+{
+    font-size: 5rem;
+    font-family: PlusJakartaSansExtraBold;
+    background-color: #ffffff;
+}
+
+.notification-box.new #nav-notification-text
+{
+    background-color: #f6fafd;
+}
+
+#mark-all
+{
+    font-size: 3.5rem;
+    margin-left: 22rem;
+    cursor: pointer;
+    font-family:PlusJakartaSansMedium ;
+    background-color: #ffffff;
+}
+
+.notification-box.new #mark-all
+{
+    background-color: #f6fafd;
+}
+
+#mark-all:hover
+{
+    color: #556c9a;
+    cursor: pointer;
+}
+
+#notifications-container
+{
+    margin-top: 2rem;
+    padding: 0rem 3rem;
+}
+
+.notification-box
+{
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: fit-content;
+    padding: 3rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto repeat(1, 3.5rem);
+    margin-top: 2rem;
+}
+
+.profile-picture
+{
+    width: 10rem;
+    background-color: #ffffff;
+}
+
+.notification-box.new .profile-picture
+{
+    background-color: #f6fafd;
+}
+
+.user-name
+{
+    font-size: 3rem;
+    margin-right: 1.5rem;
+    font-family: PlusJakartaSansExtraBold;
+    background-color: #ffffff;
+}
+
+.notification-box.new .user-name
+{
+    background-color: #f6fafd;
+}
+
+.user-name:hover
+{
+    color: #103167;
+    cursor: pointer;
+}
+
+.notification-box p
+{
+    background-color: #ffffff;
+}
+
+.notification-box.new p
+{
+    background-color: #f6fafd;
+}
+
+.notification-box-text
+{
+    font-size: 3rem;
+    font-family: PlusJakartaSans;
+    margin-left: 2rem;
+    grid-column: 2/8;
+    grid-row: 1/2;
+    height: fit-content;
+    background-color: #ffffff;
+}
+
+.notification-box.new .notification-box-text
+{
+    background-color: #f6fafd;
+}
+
+.post-notification
+{
+    font-family: PlusJakartaSansMedium;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #696e7a;
+    background-color: #ffffff;
+}
+
+.notification-box.new .post-notification
+{
+    background-color: #f6fafd;
+}
+
+.post-notification:hover
+{
+    color: #103167;
+}
+
+.unreaded-dot
+{
+    display: none;
+}
+
+.notification-box.new .unreaded-dot
+{
+    display: inline;
+    position: relative;
+    top: -0.6rem;
+    padding: 0.4rem 1rem;
+    background-color: #ed4f46;
+    margin-left: 2rem;
+    border-radius: 50%;
+}
+
+.notification-box.new .post-time
+{
+    background-color: #f6fafd;
+}
+
+.post-time
+{
+    font-size: 3rem;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    margin-left: 2.2rem;
+    font-family: PlusJakartaSansMedium;
+    color: #a4a7af;
+    background-color: #ffffff;
+}
+
+.group-notification
+{
+    font-family: PlusJakartaSansExtraBold;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #2e4b7e;
+    background-color: #ffffff;
+}
+
+.notification-box.new .group-notification
+{
+    background-color: #f6fafd;
+}
+
+.group-notification:hover
+{
+    color: #103167;
+}
+
+.private-message
+{
+    margin-top: 4rem;
+    padding: 3rem;
+    border: 1px solid #e2e6e8;
+    grid-column: 2/10;
+    border-radius: 10px;
+    font-size: 4rem;
+    font-family: PlusJakartaSansMedium;
+    color: #74777f;
+}
+
+.private-message:hover
+{
+    background-color: #e5eff9;
+    cursor: pointer;
+}
+
+.notification-box.new
+{
+    background-color: #f6fafd;
+}
+
+.user-post
+{
+    grid-column: 7/8;
+    width: 12rem;
+    margin-right: 3rem;
+    background-color: #ffffff;
+}
+
+.notification-box.new .user-post
+{
+    background-color: #f6fafd;
+}
+
+.user-post:hover
+{
+    cursor: pointer;
+}
+
+.post-reaction
+{
+    grid-column: 2/6;
+}
+
+@media (min-width:500px)
+{
+    *
+    {
+        font-size: 0.40vw;
+        background-color: #f9fafe;
+    }
+
+    #container
+    {
+        background-color: #ffffff;
+        margin-top: 15rem;
+        margin: 5rem auto 0rem auto;
+        width: 150rem;
+        border-radius: 5px;
+    }
+
+    #notifications-container
+    {
+        background-color: #ffffff;
+    }
+
+    #top-navigation
+    {
+        background-color: #ffffff;
+    }
+
+    #mark-all
+    {
+    margin-left: 70rem;
+    }
+
+    .notification-box-text
+    {
+        margin-left: 0rem;
+    }
+
+    .post-time
+    {
+        margin-left: 0rem;
+    }
+}
+
+@media (min-width:1000px)
+{
+    *
+    {
+        font-size: 0.24vw;
+        background-color: #f9fafe;
+    }
+
+    #container
+    {
+        background-color: #ffffff;
+        margin-top: 15rem;
+        margin: 5rem auto 0rem auto;
+        width: 140rem;
+        border-radius: 5px;
+    }
+
+    #notifications-container
+    {
+        background-color: #ffffff;
+    }
+
+    #top-navigation
+    {
+        background-color: #ffffff;
+    }
+
+    #mark-all
+    {
+    margin-left: 70rem;
+    }
+}
